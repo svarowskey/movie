@@ -1,0 +1,21 @@
+<mv-sidebar-logo></mv-sidebar-logo>
+
+<div class="sidebar-content">
+  <mv-sidebar-menu
+    title='Menu'
+    [list]="sidebarService.menuList"
+  >
+  </mv-sidebar-menu>
+
+  <mv-sidebar-menu
+    title='Library'
+    [list]="sidebarService.libraryList"
+  >
+  </mv-sidebar-menu>
+
+  <mv-sidebar-menu
+    title='General'
+    [list]="sidebarService.generalList"
+  >
+  </mv-sidebar-menu>
+</div>

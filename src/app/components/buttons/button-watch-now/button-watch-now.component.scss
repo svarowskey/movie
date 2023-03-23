@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+@import "../../../styles/colors";
+
+.button-watch-now {
+  border: none;
+  color: $seconady-text-color;
+  font-weight: 800;
+  font-size: 18px;
+  background: $primary-text-active-color;
+  border-radius: $buttons-border-radius;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-text-color;
+  }
+}

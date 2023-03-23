@@ -1,0 +1,9 @@
+<button class="button-add"
+        [style.width]="width"
+        [style.height]="height"
+        (click)="onClick()"
+        (mouseover)="hovered = true"
+        (mouseleave)="hovered = false"
+>
+  <mv-icon name="button-add" [isActive]="hovered"></mv-icon>
+</button>

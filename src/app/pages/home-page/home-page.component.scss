@@ -1,0 +1,16 @@
+@import '../../styles/colors';
+
+:host {
+  display: flex;
+  height: 100vh;
+  background-color: $primary-background-color;
+  overflow: hidden;
+}
+
+.homePage-container {
+  flex-grow: 1;
+  padding: 48px 54px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}

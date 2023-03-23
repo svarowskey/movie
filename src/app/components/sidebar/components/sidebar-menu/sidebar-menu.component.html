@@ -1,0 +1,8 @@
+<div class='sidebar-menu-title'>
+  {{ title }}
+</div>
+<ul class='sidebar-menu--list'>
+  <li *ngFor="let item of list" class='sidebar-menu-list--item'>
+    <mv-sidebar-menu-item [item]='item'></mv-sidebar-menu-item>
+  </li>
+</ul>

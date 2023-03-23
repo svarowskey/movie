@@ -1,0 +1,9 @@
+<div class='side-menu-item-container'
+     [class.side-menu-item-active]='item.isActive'
+     (click)='sidebarService.setActiveMenuItem(item)'
+>
+  <div class='side-menu-item-icon'>
+    <mv-icon [name]='item.iconName' [isActive]='item.isActive'></mv-icon>
+  </div>
+  <div class='side-menu-item-name'>{{ item.name }}</div>
+</div>
