@@ -25,18 +25,21 @@ export class IconService {
     private httpClient: HttpClient,
     private sanitizer: DomSanitizer
   ) {
-    this.setIcon('add-sidebar', 'assets/sidebar-icons/add-sidebar.svg');
-    this.setIcon('awards', 'assets/sidebar-icons/awards.svg');
-    this.setIcon('celebrities', 'assets/sidebar-icons/celebrities.svg');
-    this.setIcon('completed-sidebar', 'assets/sidebar-icons/completed-sidebar.svg');
-    this.setIcon('discover', 'assets/sidebar-icons/discover.svg');
-    this.setIcon('favorite', 'assets/sidebar-icons/favorite.svg');
-    this.setIcon('home', 'assets/sidebar-icons/home.svg');
-    this.setIcon('logout', 'assets/sidebar-icons/logout.svg');
-    this.setIcon('recent', 'assets/sidebar-icons/recent.svg');
-    this.setIcon('settings', 'assets/sidebar-icons/settings.svg');
-    this.setIcon('top-rated', 'assets/sidebar-icons/top-rated.svg');
-    this.setIcon('button-add', 'assets/button-icons/button-add.svg');
+    this.setIcon('add-sidebar', 'assets/icons/sidebar-icons/add-sidebar.svg');
+    this.setIcon('awards', 'assets/icons/sidebar-icons/awards.svg');
+    this.setIcon('celebrities', 'assets/icons/sidebar-icons/celebrities.svg');
+    this.setIcon('completed-sidebar', 'assets/icons/sidebar-icons/completed-sidebar.svg');
+    this.setIcon('discover', 'assets/icons/sidebar-icons/discover.svg');
+    this.setIcon('favorite', 'assets/icons/sidebar-icons/favorite.svg');
+    this.setIcon('home', 'assets/icons/sidebar-icons/home.svg');
+    this.setIcon('logout', 'assets/icons/sidebar-icons/logout.svg');
+    this.setIcon('recent', 'assets/icons/sidebar-icons/recent.svg');
+    this.setIcon('settings', 'assets/icons/sidebar-icons/settings.svg');
+    this.setIcon('top-rated', 'assets/icons/sidebar-icons/top-rated.svg');
+    this.setIcon('button-add', 'assets/icons/button-icons/button-add.svg');
+    this.setIcon('arrow-right', 'assets/icons/arrow-right.svg');
+    this.setIcon('arrow-left', 'assets/icons/arrow-left.svg');
+    this.setIcon('circle-small', 'assets/icons/circle-small.svg');
   }
 
   public setIcon(name: string, path: string): void {
@@ -54,7 +57,6 @@ export class IconService {
       const findIcon = this.svgArray.find(icon => icon.name.toLowerCase() === name.toLowerCase());
       if (findIcon) {
         const findLoadedSvg = this.svgLoadedArray.find(svg => svg.name.toLowerCase() === name.toLowerCase());
-        console.log('findLoadedSvg', findLoadedSvg);
         if (findLoadedSvg) {
           return of(findLoadedSvg.svg);
         } else {
