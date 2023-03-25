@@ -18,6 +18,13 @@ mv-icon {
           stroke: $primary-text-active-color;
         }
       }
+      &.mv-icon-fill {
+        svg {
+          path, circle, ellipse {
+            fill: $primary-text-active-color;
+          }
+        }
+      }
     }
   }
 }

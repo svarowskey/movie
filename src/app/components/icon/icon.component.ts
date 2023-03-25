@@ -13,6 +13,7 @@ export class IconComponent implements OnInit {
 
   @Input() name!: string;
   @Input() isActive?: boolean;
+  @Input() isFill?: boolean;
   public svgIcon$!: Observable<SafeHtml>;
 
   constructor(

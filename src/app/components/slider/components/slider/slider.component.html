@@ -1,0 +1,35 @@
+<div class="slider">
+  <div class="title-container">
+    {{ getCurrentSlideTitle() }}
+  </div>
+  <div class="slider-arrows">
+    <div class="button-arrow leftArrow"
+         (click)="goToPrev()"
+    >
+      <mv-icon name="arrow-left"></mv-icon>
+    </div>
+    <div class="button-arrow rightArrow"
+         (click)="goNext()"
+    >
+      <mv-icon name="arrow-right"></mv-icon>
+    </div>
+  </div>
+
+  <div class="slide"
+       [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"
+  >
+  </div>
+
+  <div class="slider-footer">
+    <mv-button-watch-now class="button-watch"></mv-button-watch-now>
+    <div class="dots-container">
+      <div *ngFor="let slide of sliderArray; let slideIndex = index;"
+           class="dot"
+           (click)="goToSlide(slideIndex)"
+      >
+        <mv-icon name="circle-small" [isActive]="currentIndex === slideIndex" [isFill]="true"></mv-icon>
+      </div>
+    </div>
+    <mv-button-watch-now [isMini]="false" class="button-watch-now"></mv-button-watch-now>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RecommendedListItem } from "../../recommended.types";
-import { MovieItem } from '../../../../../../services/movie-api/movie-api.types';
+import { MovieItem } from '../../../../../../../../services/movie-api/movie-api.types';
 
 @Component({
   selector: 'mv-recommended-list',

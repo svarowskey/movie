@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SidebarMenuItem } from "./sidebar.types";
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -12,29 +13,31 @@ export class SidebarService {
 
   activeMenuItem!: SidebarMenuItem;
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
     this.menuList = [
       {
         id: 0,
-        name: 'Home',
-        link: '#',
+        name: 'Главная',
+        link: '/',
         iconName: 'home'
       },
       {
         id: 1,
-        name: 'Discover',
-        link: '#',
+        name: 'Обзор',
+        link: '/discover',
         iconName: 'discover'
       },
       {
         id: 2,
-        name: 'Awards',
+        name: 'Награды',
         link: '#',
         iconName: 'awards'
       },
       {
         id: 3,
-        name: 'Celebrities',
+        name: 'Знаменитые',
         link: '#',
         iconName: 'celebrities'
       },
@@ -43,37 +46,37 @@ export class SidebarService {
     this.libraryList = [
       {
         id: 4,
-        name: 'Recent',
+        name: 'Недавние',
         link: '#',
         iconName: 'recent',
       },
       {
         id: 5,
-        name: 'Top Rated',
+        name: 'Топ рейтинга',
         link: '#',
         iconName: 'top-rated',
       },
       {
         id: 6,
-        name: 'Downloaded',
+        name: 'Загруженные',
         link: '#',
         iconName: 'discover',
       },
       {
         id: 7,
-        name: 'Playlists',
+        name: 'Избранные',
         link: '#',
         iconName: 'favorite',
       },
       {
         id: 8,
-        name: 'Watchlist',
+        name: 'Посмотреть',
         link: '#',
         iconName: 'add-sidebar',
       },
       {
         id: 9,
-        name: 'Completed',
+        name: 'Просмотренные',
         link: '#',
         iconName: 'completed-sidebar',
       },
@@ -82,13 +85,13 @@ export class SidebarService {
     this.generalList = [
       {
         id: 10,
-        name: 'Settings',
+        name: 'Настройки',
         link: '#',
         iconName: 'settings',
       },
       {
         id: 11,
-        name: 'Log Out',
+        name: 'Выход',
         link: '#',
         iconName: 'logout',
       },
@@ -103,5 +106,6 @@ export class SidebarService {
     }
     item.isActive = true;
     this.activeMenuItem = item;
+    this.router.navigate([ item.link ])
   }
 }

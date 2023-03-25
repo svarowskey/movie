@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { IconComponent } from "./icon/icon.component";
 import { ButtonAddComponent } from './buttons/button-add/button-add.component';
 import { ButtonWatchNowComponent } from './buttons/button-watch-now/button-watch-now.component';
-import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -11,8 +10,7 @@ import { SliderComponent } from './slider/slider.component';
   declarations: [
     IconComponent,
     ButtonAddComponent,
-    ButtonWatchNowComponent,
-    SliderComponent
+    ButtonWatchNowComponent
   ],
   imports: [
     CommonModule
@@ -20,8 +18,7 @@ import { SliderComponent } from './slider/slider.component';
     exports: [
         IconComponent,
         ButtonAddComponent,
-        ButtonWatchNowComponent,
-        SliderComponent
+        ButtonWatchNowComponent
     ]
 })
 export class SharedComponentsModule { }
