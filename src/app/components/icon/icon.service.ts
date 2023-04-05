@@ -40,6 +40,7 @@ export class IconService {
     this.setIcon('arrow-right', 'assets/icons/arrow-right.svg');
     this.setIcon('arrow-left', 'assets/icons/arrow-left.svg');
     this.setIcon('circle-small', 'assets/icons/circle-small.svg');
+    this.setIcon('search-icon', 'assets/icons/search-icon.svg');
   }
 
   public setIcon(name: string, path: string): void {
