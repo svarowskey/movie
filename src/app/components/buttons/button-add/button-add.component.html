@@ -4,6 +4,10 @@
         (click)="onClick()"
         (mouseover)="hovered = true"
         (mouseleave)="hovered = false"
+        [class.button-add-mini]="isMini"
 >
   <mv-icon name="button-add" [isActive]="hovered"></mv-icon>
+  <span class="button-add-text">
+    <ng-content></ng-content>
+  </span>
 </button>

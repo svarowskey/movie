@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/colors";
 
 .button-add {
   border: none;
@@ -9,4 +10,26 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  gap: 10px;
+
+  &:not(.button-add-mini) {
+    padding: 19px 25px;
+  }
+
+  &:hover {
+    .button-add-text {
+      color: $primary-text-active-color;
+    }
+  }
+
+  .button-add-text {
+    color: $primary-text-color;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  mv-icon {
+    height: 21px;
+  }
 }

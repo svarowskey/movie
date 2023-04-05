@@ -10,6 +10,7 @@ export class ButtonAddComponent implements OnInit {
   @Input() addFunction!: CallableFunction;
   @Input() width: string = '100%'
   @Input() height: string = '100%'
+  @Input() isMini?: boolean = false;
 
   hovered: boolean = false;
 
