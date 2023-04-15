@@ -1,0 +1,26 @@
+@import "../../../styles/colors";
+
+:host {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homePage-container {
+  flex-grow: 1;
+  padding: 48px 54px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .homePage-header {
+    display: grid;
+    margin-bottom: 60px;
+
+    mv-search-field {
+      width: 330px;
+      display: block;
+      justify-self: flex-end;
+    }
+  }
+}

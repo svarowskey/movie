@@ -1,0 +1,11 @@
+@import "../../../../../../styles/colors";
+@import "../../sidebar.style.variables";
+
+.sidebar-menu-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $sidebar-menu-title-color;
+  margin-bottom: 14px;
+  padding: 0 $side-container-padding;
+}

@@ -1,0 +1,23 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/variables";
+
+.search-field-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 15px;
+  background: $secondary-background-color;
+  border-radius: 12px;
+  padding: 16px 25px;
+
+  mv-icon {
+    height: 24px;
+  }
+
+  input {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    flex-grow: 1;
+  }
+}

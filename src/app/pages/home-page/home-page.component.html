@@ -1,0 +1,8 @@
+<div class="homePage-container">
+  <div class="homePage-header">
+    <mv-search-field></mv-search-field>
+  </div>
+  <mv-slider [sliderArray]="(recommendedFilmsSlides$ | async) || []"></mv-slider>
+  <mv-recommended [films]="(recommendedFilms$ | async) || []"></mv-recommended>
+</div>
+

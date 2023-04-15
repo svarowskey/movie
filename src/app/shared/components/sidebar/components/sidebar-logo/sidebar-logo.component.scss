@@ -1,0 +1,9 @@
+@import "../../../../../../styles/colors";
+
+:host {
+  color: $primary-text-color;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+}

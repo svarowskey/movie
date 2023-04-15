@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="search-field-container">
+  <button type="submit">
+    <mv-icon name="search-icon"></mv-icon>
+  </button>
+  <input formControlName="search" type="text" placeholder="Поиск">
+</form>
