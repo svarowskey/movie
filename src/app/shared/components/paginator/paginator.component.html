@@ -1,0 +1,5 @@
+
+<div class="paginator-container">
+  <button *ngFor="let btn of pages" [class.active]="btn === currentPage"
+          (click)="change.emit(btn)">{{ btn }}</button>
+</div>

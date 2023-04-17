@@ -1,0 +1,22 @@
+<div class="recommended-list-item--container"
+     [style.background-image]="'url(https://image.tmdb.org/t/p/w500/' + item.poster_path + ')'"
+>
+  <div class="recommended-list-item--container-cover"></div>
+  <div class="recommended-list-item--header">
+    <span class="recommended-list-item--title">{{ item.title }}</span>
+    <div class="recommended-list-item--rate">
+
+    </div>
+  </div>
+
+  <div class="recommended-list-item--footer">
+    <div class="recommended-list-item-footer--info">
+
+    </div>
+
+    <div class="recommended-list-item-footer--buttons">
+      <mv-button-add width="57px" height="57px"></mv-button-add>
+      <mv-button-watch-now></mv-button-watch-now>
+    </div>
+  </div>
+</div>

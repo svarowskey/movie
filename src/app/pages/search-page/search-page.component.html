@@ -1,0 +1,10 @@
+<mv-search-field></mv-search-field>
+
+<p>{{ (loading$ | async) ? 'Загрузка...' : '' }}</p>
+
+<mv-paginator mvPaginatorService
+              [countPages]="10"></mv-paginator>
+
+<div class="search-page-container">
+  <mv-film-card *ngFor="let film of films$ | async trackBy: trackBy" [item]="film"></mv-film-card>
+</div>
