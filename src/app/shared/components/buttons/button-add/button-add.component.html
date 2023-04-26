@@ -7,7 +7,7 @@
         [class.button-add-mini]="isMini"
 >
   <mv-icon name="button-add" [isActive]="hovered"></mv-icon>
-  <span class="button-add-text">
+  <span class="button-add-text" *ngIf="!isMini">
     <ng-content></ng-content>
   </span>
 </button>
