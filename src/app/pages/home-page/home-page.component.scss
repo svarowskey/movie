@@ -23,4 +23,11 @@
       justify-self: flex-end;
     }
   }
+
+  .popular-films {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
 }

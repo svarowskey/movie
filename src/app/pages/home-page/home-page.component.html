@@ -3,6 +3,9 @@
     <mv-search-field></mv-search-field>
   </div>
   <mv-slider [sliderArray]="(recommendedFilmsSlides$ | async) || []"></mv-slider>
-  <mv-recommended [films]="(recommendedFilms$ | async) || []"></mv-recommended>
+  <div class="popular-films">
+    <h2>Популярные фильмы и сериалы</h2>
+    <mv-recommended [films]="(recommendedFilms$ | async) || []"></mv-recommended>
+  </div>
 </div>
 
