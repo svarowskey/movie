@@ -45,4 +45,13 @@ export class MovieApiService {
       })
       .pipe(map((res) => res.results));
   }
+
+  getGenres() {
+    return this.httpClient.get(
+      'https://api.themoviedb.org/3/genre/movie/list',
+      {
+        params: this.httpParams,
+      }
+    );
+  }
 }
